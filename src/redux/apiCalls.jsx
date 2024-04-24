@@ -7,7 +7,7 @@ export const getAllNotes = () => {
     return async (dispatch) => {
         try {
             const {data} = await axios.get(`https://noty-back.onrender.com/api/note/`)
-            dispatch(noteActions.setNotes(data)) 
+            dispatch(noteActions.setNotes(data.reverse())) 
             return data
         } catch (error) {
             console.log(error)
