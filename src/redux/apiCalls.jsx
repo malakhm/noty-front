@@ -6,7 +6,7 @@ import { noteActions } from "./slice";
 export const getAllNotes = () => {
     return async (dispatch) => {
         try {
-            const {data} = await axios.get(`http://localhost:5000/api/note/`)
+            const {data} = await axios.get(`https://noty-back.onrender.com/api/note/`)
             dispatch(noteActions.setNotes(data)) 
             return data
         } catch (error) {
@@ -20,7 +20,7 @@ export const getAllNotes = () => {
 export const addNote = (title, content) => {
     return async (dispatch) => {
         try {
-            const {data} = await axios.post(`http://localhost:5000/api/note/`, {
+            const {data} = await axios.post(`https://noty-back.onrender.com/api/note/`, {
                 title,
                 content
             })
@@ -36,7 +36,7 @@ export const addNote = (title, content) => {
 export const editNote = (title, content, id) => {
     return async (dispatch) => {
         try {
-            const {data} = await axios.put(`http://localhost:5000/api/note/edit/${id}`, {
+            const {data} = await axios.put(`https://noty-back.onrender.com/api/note/edit/${id}`, {
                 title,
                 content
             })
@@ -52,7 +52,7 @@ export const editNote = (title, content, id) => {
 export const deleteNote = (id) => {
     return async (dispatch) => {
         try {
-            const {data} = await axios.put(`http://localhost:5000/api/note/delete/${id}`)
+            const {data} = await axios.put(`https://noty-back.onrender.com/api/note/delete/${id}`)
             dispatch(noteActions.deleteNote(id))
             return data
         } catch (error) {
