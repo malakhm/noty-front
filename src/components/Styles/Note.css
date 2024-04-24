@@ -1,0 +1,45 @@
+
+
+.Single-note-main {
+    background-color: #fa9908e2;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.Single-note-content {
+    align-items: center !important;
+    justify-content: center!important;
+    padding: 10px;
+
+}
+.note-p{
+    display: flex;
+    align-items: center;
+}
+
+.Single-note-title{
+    font-family: Dosis-Bold;
+}
+
+.Single-note{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.Single-note-icons{
+    height: 30px;
+}
+.icon{
+    font-size: x-large;
+}
+
+@media screen and (max-width: 768px){
+    .Single-note{
+        border: 2px solid green;
+        width: 150px;
+        align-self: center !important;
+    }
+}

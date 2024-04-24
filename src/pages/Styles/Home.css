@@ -1,0 +1,23 @@
+.Home-title-main{
+    background-color: #5d17ea6d;
+    width: 300px;
+    border-radius: 50px 10px 50px 10px;
+}
+.Home-notes-main{
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 768px){
+    .Home-sub-header{
+        flex-direction: column !important;
+    border: 1px solid blue;
+    gap:10px
+
+    }
+    .Home-main-component{
+        justify-content: center !important;
+        align-items: center !important;
+        border: 2px solid yellow;
+    }
+}
