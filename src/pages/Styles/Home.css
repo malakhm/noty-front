@@ -11,13 +11,11 @@
 @media screen and (max-width: 768px){
     .Home-sub-header{
         flex-direction: column !important;
-    border: 1px solid blue;
     gap:10px
 
     }
     .Home-main-component{
         justify-content: center !important;
         align-items: center !important;
-        border: 2px solid yellow;
     }
 }

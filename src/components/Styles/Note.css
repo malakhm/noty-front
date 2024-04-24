@@ -39,7 +39,6 @@
 
 @media screen and (max-width: 768px){
     .Single-note{
-        border: 2px solid green;
         width: 150px;
         align-self: center !important;
     }
