@@ -2,6 +2,7 @@
 .Button-main-class{
     background-color: #5d17ea;
     color: white;
+    border: none;
     font-family: Dosis-Bold;
     border-radius: 5px;
     width: 120px;

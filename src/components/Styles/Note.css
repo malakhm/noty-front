@@ -1,7 +1,7 @@
 
 
 .Single-note-main {
-    background-color: #fa9908e2;
+    background-color: #fa9908c6;
     border-radius: 10px;
     width: 100%;
     height: 250px;
@@ -27,6 +27,7 @@
     flex-direction: column;
     border-radius: 10px;
     width: 200px;
+    cursor: pointer;
 }
 
 .Single-note-icons{
@@ -42,4 +43,12 @@
         width: 150px;
         align-self: center !important;
     }
+}
+
+
+.modal-head{
+    background-color: #fa9908c6 !important;
+}
+#contained-modal-title-vcenter{
+    font-family: Dosis-Bold;
 }

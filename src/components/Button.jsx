@@ -1,10 +1,10 @@
 import React from 'react'
 import './Styles/Button.css'
-function Button() {
+function Button({ children, ...props }) {
   return (
-    <div className='Button-main-class'>
-      Add note
-    </div>
+    <button className='Button-main-class'{...props} >
+   { children }
+    </button>
   )
 }
 
